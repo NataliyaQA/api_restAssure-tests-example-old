@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useTestNG()
+}
+
+
+dependencies {
+    compile group: 'org.testng', name: 'testng', version: '6.9.10'
+    testImplementation 'io.rest-assured:rest-assured:4.3.3'
+    testImplementation 'io.rest-assured:xml-path:4.3.3'
+    testImplementation 'io.rest-assured:json-schema-validator:4.3.3'
+    testImplementation 'org.hamcrest:hamcrest:2.2'
+    compileOnly 'org.projectlombok:lombok:1.18.16'
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
+    testCompileOnly 'org.projectlombok:lombok:1.18.16'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.16'
+}
+
