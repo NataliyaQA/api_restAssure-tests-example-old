@@ -4,7 +4,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class TryTestNG // purpose of this Test?
+public class TryTestNGJustForCheck // purpose of this Test?
 {
     @BeforeClass
     public void setup()
