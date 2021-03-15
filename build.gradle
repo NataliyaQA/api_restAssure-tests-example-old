@@ -16,6 +16,7 @@ test {
 
 dependencies {
     compile group: 'org.testng', name: 'testng', version: '6.9.10'
+    compileOnly 'io.rest-assured:rest-assured:4.3.3'
     testImplementation 'io.rest-assured:rest-assured:4.3.3'
     testImplementation 'io.rest-assured:xml-path:4.3.3'
     testImplementation 'io.rest-assured:json-schema-validator:4.3.3'
